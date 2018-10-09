@@ -7,7 +7,8 @@ import Table from './components/table-example/Table';
 import Buttons from './components/events-example/Buttons';
 import SingleInput from './components/events-example/SingleInput';
 import MultipleInput from './components/events-example/MultipleInput';
-import ConditionalRender from './components/conditional-render'
+import ConditionalRender from './components/conditional-render';
+import AxiosGet from './components/axios-get'
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
         <SingleInput />
         <MultipleInput />
         <ConditionalRender />
+        <AxiosGet />
       </div>
     );
   }
