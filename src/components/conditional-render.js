@@ -6,6 +6,19 @@ class ConditionalRender extends Component {
         this.state = {
             error: false
         }
+
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(event) {
+        let target = event.target;
+        let value = target.type === 'checkbox' ?
+            target.checked : target.value;
+        let name = target.name;
+        
+        this.setState({
+            [name]: value
+        })
     }
 
     render(){
@@ -22,9 +35,15 @@ class ConditionalRender extends Component {
         }
 
         return(
-            <div className="col-md-4">
-                {msg}
+            <div>
+                <div className="col-md-4">
+                    {msg}
+                </div>
+
+                <input type="checkbox" name="error" checked={this.state.error}
+                onChange={this.handleChange} />
             </div>
+            
         );
     }
 }
