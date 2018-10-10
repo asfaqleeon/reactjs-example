@@ -12,6 +12,7 @@ import MultipleInput from './components/events-example/MultipleInput';
 import ConditionalRender from './components/conditional-render';
 import AxiosGet from './components/axios-get';
 import Error from './error'
+import AxiosPost from './components/axios-post'
 
 class App extends Component {
   render() {
@@ -49,6 +50,10 @@ class App extends Component {
                   <li className="list-group-item">
                     <NavLink to="/axios-get">axios get</NavLink>
                   </li>
+
+                  <li className="list-group-item">
+                    <NavLink to="/axios-post">axios post</NavLink>
+                  </li>
                 </ul>  
               </div>
 
@@ -62,6 +67,7 @@ class App extends Component {
                   <Route path="/multiple-input" component={MultipleInput} />
                   <Route path="/conditional-render" component={ConditionalRender} />
                   <Route path="/axios-get" component={AxiosGet} />
+                  <Route path="/axios-post" component={AxiosPost} />
                   <Route component={Error} />
                 </Switch>
               </div>
