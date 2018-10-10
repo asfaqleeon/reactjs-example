@@ -10,9 +10,9 @@ import Buttons from './components/events-example/Buttons';
 import SingleInput from './components/events-example/SingleInput';
 import MultipleInput from './components/events-example/MultipleInput';
 import ConditionalRender from './components/conditional-render';
-import AxiosGet from './components/axios-get';
+import AxiosGet from './components/axios-example/axios-get';
 import Error from './error'
-import AxiosPost from './components/axios-post'
+import AxiosPost from './components/axios-example/axios-post'
 
 class App extends Component {
   render() {

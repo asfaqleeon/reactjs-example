@@ -38,7 +38,7 @@ class AxiosPost extends Component {
             console.log(response);
             this.setState({
                 result: response.data.result
-            })
+            });
         })
         .catch( (error) => {
             console.log(error);
@@ -46,10 +46,10 @@ class AxiosPost extends Component {
         .then( () => {
             // always executed
         });
+
     }
 
     render(){
-        console.log(this.state.data);
         return(
             <div className="col-md-4">
                 <div className="alert alert-primary">{this.state.result}</div>
